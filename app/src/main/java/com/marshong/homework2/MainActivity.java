@@ -1,17 +1,49 @@
 package com.marshong.homework2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private Button mNextPageButton;
+    private EditText mNameEditText;
+    private EditText mEmailEditText;
+    private CheckBox mCheckBoxEmailSub;
+
+    //extra information
+    public static final String extraName = "extra_name";
+    public static final String extraEmail = "extra_email";
+    public static final String extraBoxChecked ="extra_box_checked";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mNameEditText = (EditText) findViewById(R.id.editTextName);
+        mEmailEditText = (EditText) findViewById(R.id.editTextEmail);
+        mCheckBoxEmailSub = (CheckBox) findViewById(R.id.checkBoxEmailSub);
+
+        mNextPageButton = (Button) findViewById(R.id.buttonSubmit);
+        mNextPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+
+                intent.putExtra(extraName, mNameEditText.getText().toString());
+                intent.putExtra(extraEmail, mEmailEditText.getText().toString());
+                intent.putExtra(extraBoxChecked, mCheckBoxEmailSub.isChecked());
+                startActivity(intent);
+            }
+        });
     }
 
 
