@@ -2,7 +2,16 @@
 <resources>
 
     <string name="app_name">Homework2</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="name">Name:</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="string_email_sub">Sign up to receive newsletter by email.</string>
+    <string name="hint_first_last_name">First and Last Name</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="submit_button">Submit</string>
+
+    <!--Extras-->
+    <string name="extra_first_name">extraFirstName</string>
+    <string name="extra_last_name">extraLastName</string>
 
 </resources>
