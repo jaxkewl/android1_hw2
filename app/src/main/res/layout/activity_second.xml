@@ -18,14 +18,14 @@
             android:text="@string/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
 
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
 
     </LinearLayout>
 
@@ -37,14 +37,14 @@
             android:text="Email:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
 
 
         <TextView
             android:id="@+id/textViewEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,16 +52,16 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Signed up for newsletter"
+            android:text="@string/newsletter_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
 
         <TextView
             android:id="@+id/textViewSignedUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size"/>
+            android:textSize="@dimen/font_size" />
 
     </LinearLayout>
 

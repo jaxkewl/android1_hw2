@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class SecondActivity extends ActionBarActivity {
 
+    //setup text views to display submitted information from bundle
     private TextView mNameTextView;
     private TextView mEmailTextView;
     private TextView mCheckedSub;
@@ -19,22 +20,24 @@ public class SecondActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-
+        //get the bundle information from the intent
         Bundle extraBundle = getIntent().getExtras();
 
+        //setup objects
         mNameTextView = (TextView) findViewById(R.id.textViewName);
         mEmailTextView = (TextView) findViewById(R.id.textViewEmail);
         mCheckedSub = (TextView) findViewById(R.id.textViewSignedUp);
 
+        //set the text for display
         mNameTextView.setText(extraBundle.getString(MainActivity.extraName));
         mEmailTextView.setText(extraBundle.getString(MainActivity.extraEmail));
+
+        //setup display for check box state
         boolean isChecked = extraBundle.getBoolean(MainActivity.extraBoxChecked);
 
         if (isChecked) {
             mCheckedSub.setText("Yes");
-
         } else {
-
             mCheckedSub.setText("No");
         }
     }

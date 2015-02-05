@@ -9,6 +9,7 @@
     <string name="hint_first_last_name">First and Last Name</string>
     <string name="hint_email_address">Email Address</string>
     <string name="submit_button">Submit</string>
+    <string name="newsletter_check">Signed up for newsletter: </string>
 
     <!--Extras-->
     <string name="extra_first_name">extraFirstName</string>
